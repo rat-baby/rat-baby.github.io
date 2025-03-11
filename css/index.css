@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+.info {
+  text-align: center;
+}
+
+.info li {
+  display: inline;
+  margin: 0 3rem;
+}
+
+.info li a {
+  color: black;
+  text-decoration: none;
+}
+
+.info li a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+.letter {
+  grid-column: 2 / 3;
+  margin: 1rem 8rem;
+}
+
+.letter article {
+  text-align: justify
+}
+
+.signature {
+  margin-top: 1.5rem;
+  font-family: 'Imperial Script', Georgia;
+  font-size: 2.5rem;
+}
+

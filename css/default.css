@@ -1,0 +1,55 @@
+body {
+  background: #f5f0e3;
+}
+
+.wrapper {
+  width: 60rem;
+  height: 45rem;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #333;
+  border: 2px solid #333;
+  font-family: Georgia, Calibri, Roboto;
+}
+
+header {
+  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 2px solid #bbb;
+  width: 80%;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+.body nav {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border-right: 2px solid #555
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  padding-right: 0.75rem
+}
+
+nav ul li {
+  margin-bottom: 1rem;
+
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #555;
+}

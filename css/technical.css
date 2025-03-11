@@ -1,0 +1,13 @@
+main {
+  position: relative;
+}
+
+.second {
+  position: absolute;
+  right: 12rem;
+  top: 0rem;
+}
+
+nav {
+  height: 18.75rem;
+}
