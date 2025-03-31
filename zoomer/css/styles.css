@@ -1,0 +1,27 @@
+/* Reset margin and padding */
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+.magnify {
+    width: 600px;
+    margin: 50px auto;
+    position: relative;
+}
+
+/* Create the magnifying glass */
+.large {
+    
+    position: absolute;
+    
+    box-shadow: 0 0 0 10px rgba(80, 80, 80, 0.5),
+        0 0 7px 7px rgba(20, 20, 20, 0.8),
+        inset 0 0 40px 2px rgba(0, 0, 0, 0.8);
+    
+    /* Set up the "large" version of the image as 
+       a background image for our magnifying glass */
+    background: url('../images/Galgenberg.jpg') no-repeat;
+    
+    display: none;
+}

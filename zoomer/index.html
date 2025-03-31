@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Zoom with Magnifying Glass using CSS and jQuery</title>
+	<meta charset="utf-8">
+	
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- Lets make a simple image magnifier -->
+	<div class="magnify">
+		
+		<!-- This is the magnifying glass which will contain the original/large version -->
+		<div class="large"></div>
+		
+		<!-- This is the small image -->
+		<!-- Normally, this image is 2308 x 1476 (large image dimensions)
+		     but here we are shrinking it to be displayed at 600 pixels wide -->
+		<img class="small" src="images/Galgenberg.jpg" width="600">
+		
+	</div>
+
+	<!-- Time for jquery action - access scripts here -->
+  <!-- <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="js/jquery.magnifyZoom_jgraber4.js"></script>
+    
+    <script>
+    
+        $( function() {
+            /*
+            - how to call the plugin:
+            $( selector ).magnifyZoom( [options] );
+            - options:
+            {
+                // default width (px)
+				width : 300,
+				// default height (px)
+				height : 300,
+				// border-radius setting
+				cornerRounding : '50%'
+            }
+            */
+            
+            //$('.magnify').magnifyZoom();
+
+            
+            $('.magnify').magnifyZoom({
+                width: 250,
+                height: 150,
+                cornerRounding: '40%'
+            });
+            
+
+        });
+    
+    </script>
+
+</body>
+</html>
